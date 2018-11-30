@@ -1,0 +1,39 @@
+{
+  "name": "example",
+  "description": "a demo scaffold structure for generating zome code structure",
+  "version": "0.1",
+  "uuid": "00000000-0000-0000-0000-000000000000",
+  "scaffold_version": "2.0",
+  "properties": {
+    "test": "test"
+  },
+  "zomes": {
+    "example_zome": {
+      "entry_types": {
+        "example_entry": {
+          "description": "an example entry",
+          "sharing": "public",
+          "native_type": "ExampleEntry",
+          "links_to": [],
+          "linked_from": []
+        }
+      },
+      "capabilities": {
+        "capability": {
+          "membrane": "public"
+        },
+        "functions": [
+          {
+            "name": "example_function",
+            "inputs": [
+              {
+                "name": "test",
+                "type": "String"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

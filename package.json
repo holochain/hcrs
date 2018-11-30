@@ -1,0 +1,18 @@
+{
+  "name": "hcrs",
+  "version": "0.0.1",
+  "description": "nodejs scaffold generation for holochain-rust",
+  "main": "lib/index.js",
+  "bin": {
+    "hcrs": "bin/hcrs"
+  },
+  "scripts": {
+    "test": "standard --fix bin/**/* lib/**/*.js"
+  },
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1"
+  }
+}
