@@ -5,10 +5,10 @@ const hcrs = require('../lib/index')
 async function main () {
   switch (process.argv[2] || 'generate') {
     case 'generate':
-      hcrs.generate()
+      await hcrs.generate()
       break
     case 'build':
-      hcrs.build()
+      await hcrs.build()
       break
     default:
       console.error('usage: hcrs [subcommand]')

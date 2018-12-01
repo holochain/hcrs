@@ -11,8 +11,5 @@
   },
   "devDependencies": {
     "standard": "^12.0.1"
-  },
-  "dependencies": {
-    "fs-extra": "^7.0.1"
   }
 }
