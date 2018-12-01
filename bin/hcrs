@@ -2,4 +2,26 @@
 
 const hcrs = require('../lib/index')
 
-hcrs.generate()
+async function main () {
+  switch (process.argv[2] || 'generate') {
+    case 'generate':
+      hcrs.generate()
+      break
+    case 'build':
+      hcrs.build()
+      break
+    default:
+      console.error('usage: hcrs [subcommand]')
+      console.error('       hcrs generate - (default) generate code from scaffold')
+      console.error('       hcrs build - generate code, then run `hc package`')
+      console.error('       hcrs help - this usage info')
+      process.exit(1)
+  }
+
+  console.log('done')
+}
+
+main().then(() => {}, (err) => {
+  console.error(err)
+  process.exit(1)
+})

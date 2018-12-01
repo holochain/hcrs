@@ -19,20 +19,28 @@
         }
       },
       "capabilities": {
-        "capability": {
-          "membrane": "public"
-        },
-        "functions": [
-          {
-            "name": "example_function",
-            "inputs": [
-              {
-                "name": "test",
-                "type": "String"
-              }
-            ]
-          }
-        ]
+        "example_capability": {
+          "capability": {
+            "membrane": "public"
+          },
+          "functions": [
+            {
+              "name": "example_function",
+              "inputs": [
+                {
+                  "name": "test",
+                  "type": "String"
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "address",
+                  "type": "JsonString"
+                }
+              ]
+            }
+          ]
+        }
       }
     }
   }
