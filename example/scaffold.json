@@ -14,8 +14,18 @@
           "description": "an example entry",
           "sharing": "public",
           "native_type": "ExampleEntry",
-          "links_to": [],
-          "linked_from": []
+          "links_to": [
+            {
+              "target_type": "%agent_id",
+              "tag": "example_link_to"
+            }
+          ],
+          "linked_from": [
+            {
+              "target_type": "%agent_id",
+              "tag": "example_link_from"
+            }
+          ]
         }
       },
       "capabilities": {
